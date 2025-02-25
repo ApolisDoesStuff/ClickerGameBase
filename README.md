@@ -15,4 +15,4 @@ Editing the window title uses the windowtitle.py script.
 
 CONTRIBUTING:
 
-pull request to bleeding-edge branch, then i will bring those changes to main when they are ready.
+commit to bleeding-edge branch, then i will bring those changes to main when they are ready.
