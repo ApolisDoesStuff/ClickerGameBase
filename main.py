@@ -2,9 +2,13 @@ import sys
 import os
 import json
 import importlib.util
-from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QHBoxLayout
-from PyQt5.QtGui import QPixmap, QIcon
-from PyQt5.QtCore import Qt, QTimer
+try:
+    from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QHBoxLayout
+    from PyQt5.QtGui import QPixmap, QIcon
+    from PyQt5.QtCore import Qt, QTimer
+except:
+    print("Error: You need to install PyQt5!")
+    os.system("pause")
 
 # Game Constants
 SAVE_FILE = "savegame.json"
