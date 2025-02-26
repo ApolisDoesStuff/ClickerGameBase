@@ -1,6 +1,7 @@
 import sys
 import os
 import json
+import time
 import importlib.util
 try:
     from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QHBoxLayout
@@ -8,7 +9,7 @@ try:
     from PyQt5.QtCore import Qt, QTimer
 except:
     print("Error: You need to install PyQt5!")
-    os.system("pause")
+    time.sleep(5)
 
 # Game Constants
 SAVE_FILE = "savegame.json"
